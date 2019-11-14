@@ -1,7 +1,8 @@
 const request = require('superagent')
 const router = require('express').Router()
 
-const URL = 'https://random.dog/woof.json'
+const URL = 'http://localhost:3000/api/v1/dog'
+
 
 router.get('/dog', (req, res) => {
   return request.get(URL)

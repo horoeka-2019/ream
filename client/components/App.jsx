@@ -1,16 +1,17 @@
 import React from 'react'
 import { fetchDog } from '../api/dog'
 import Dog from './Dog'
-import { get } from 'https'
+// import { get } from 'https'
 
 class App extends React.Component {
   state = {
-    dog: null
+    dog: ''
   }
 
   componentDidMount () {
     fetchDog()
       .then(response => {
+        console.log(response.body)
         this.setState({
           dog: response.body
         })

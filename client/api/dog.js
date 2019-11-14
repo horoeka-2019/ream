@@ -1,6 +1,6 @@
 import request from 'superagent'
 
-const URL = 'http://localhost:3000/api/v1/dog'
+const URL = 'https://random.dog/woof.json'
 
 export function fetchDog () {
   return request.get(URL)
