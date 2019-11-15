@@ -21,8 +21,22 @@ class App extends React.Component {
   render () {
     return (
       <>
-        <h1>React development has begun!</h1>
-        { this.state.dog && <Dog dog={this.state.dog }/>}
+
+        {/* <h1>Welcome to our API playground!!!!</h1> */}
+        {/* <div className="container" style={{ textAlign: 'center' }}> */}
+        <div className="row">
+          {/* Left blank */}
+          <div className="col-md-3 col-sm-3 col-xs-3 container" style={{ textAlign: 'center' }}>
+            { this.state.dog && <Dog dog={this.state.dog }/>}</div>
+          <div className="col-md-3 col-sm-6 col-xs-3 container" style={{ textAlign: 'center' }}>
+            { this.state.dog && <Dog dog={this.state.dog }/>}
+          </div>
+          {/* Left blank */}
+          <div className="col-md-3 col-sm-3 col-xs-3 container" style={{ textAlign: 'center' }}>
+            { this.state.dog && <Dog dog={this.state.dog }/>}
+          </div>
+        </div>
+        {/* </div> */}
       </>
     )
   }
