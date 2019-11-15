@@ -23,20 +23,70 @@ class App extends React.Component {
       <>
 
         {/* <h1>Welcome to our API playground!!!!</h1> */}
-        {/* <div className="container" style={{ textAlign: 'center' }}> */}
-        <div className="row">
-          {/* Left blank */}
-          <div className="col-md-3 col-sm-3 col-xs-3 container" style={{ textAlign: 'center' }}>
-            { this.state.dog && <Dog dog={this.state.dog }/>}</div>
-          <div className="col-md-3 col-sm-6 col-xs-3 container" style={{ textAlign: 'center' }}>
-            { this.state.dog && <Dog dog={this.state.dog }/>}
+        <div style={{
+          height: this.props.height,
+          width: this.props.width
+        }} >
+          <div className="row" style={{ textAlign: 'center' }}>
+
+            <div className="col-md-2 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}</div>
+
+            <div className="col-md-4 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}
+            </div>
+
+            <div className="col-md-4 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}
+            </div>
+
+            <div className="col-md-2 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}
+            </div>
+
           </div>
-          {/* Left blank */}
-          <div className="col-md-3 col-sm-3 col-xs-3 container" style={{ textAlign: 'center' }}>
-            { this.state.dog && <Dog dog={this.state.dog }/>}
+
+          <div className="row" style={{ textAlign: 'center' }}>
+
+            <div className="col-md-4 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}</div>
+            <div className="col-md-4 col-sm-6 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}
+            </div>
+            <div className="col-md-4 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}
+            </div>
+
+          </div>
+
+          <div className="row" style={{ textAlign: 'center' }}>
+
+            <div className="col-md-2 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}</div>
+            <div className="col-md-4 col-sm-6 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}
+            </div>
+            <div className="col-md-4 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}
+            </div>
+            <div className="col-md-2 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}
+            </div>
+
+          </div>
+          <div className="row" style={{ textAlign: 'center' }}>
+
+            <div className="col-md-4 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}</div>
+            <div className="col-md-4 col-sm-6 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}
+            </div>
+            <div className="col-md-4 col-sm-3 col-xs-3 container">
+              { this.state.dog && <Dog dog={this.state.dog }/>}
+            </div>
+
           </div>
         </div>
-        {/* </div> */}
       </>
     )
   }
